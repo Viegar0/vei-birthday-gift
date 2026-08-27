@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>A Little Surprise For You</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<main class="card">
+		<section id="login-screen" class="login-screen panel">
+			<div class="heart" aria-hidden="true">♥</div>
+			<h1>Just for you 💗</h1>
+			<p>Enter the little secret to open your surprise.</p>
+			<form id="login-form">
+				<label class="hidden" for="username">Siapa namanya?</label>
+				<input class="field" id="username" type="text" placeholder="Siapa namanya?" autocomplete="username" required />
+				<label class="hidden" for="password">Passwordnya kamu tahu!!</label>
+				<input class="field" id="password" type="password" placeholder="Passwordnya kamu tahu!!" autocomplete="current-password" required />
+				<button class="form-button" type="submit">Unlock surprise ✨</button>
+			</form>
+			<p id="login-status" class="form-status" aria-live="polite"></p>
+		</section>
+		<section id="welcome-content" class="hidden">
+			<button class="heart" type="button" aria-label="Send a little heart">♥</button>
+			<h1>Hi, beautiful</h1>
+			<p id="message">I made this tiny corner of the internet just for you.</p>
+			<button id="open">Open your surprise ✨</button>
+			<section id="surprise" class="hidden">
+			<div class="photo-note">Every day feels a little brighter, funnier, and more special because of you.</div>
+			<p>Thank you for being my favorite person and my happiest thought.</p>
+			<div class="mood-title">How are you feeling today?</div>
+			<div class="moods" aria-label="Choose a mood">
+				<button class="mood active" data-message="Then keep this little sparkle for your day. ✨">Sparkly</button>
+				<button class="mood" data-message="A soft reminder: you do not have to have it all figured out. 💗">Soft</button>
+				<button class="mood" data-message="Sending you an extra-big hug and a pocketful of pink joy. 💕">Needing a hug</button>
+			</div>
+			<button id="more">One more thing 💌</button>
+			<div id="counter">Hearts sent: 0</div>
+			<div class="panel">
+				<div class="mood-title">A little question for you</div>
+				<p id="question">What is one tiny thing that made you smile today?</p>
+				<form id="answer-form">
+					<label class="hidden" for="answer">Your answer</label>
+					<input class="field" id="answer" type="text" placeholder="Type your answer here..." autocomplete="off" required />
+					<button class="form-button" type="submit">Send my answer 💌</button>
+				</form>
+				<p id="answer-status" class="form-status" aria-live="polite"></p>
+			</div>
+		</section>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+

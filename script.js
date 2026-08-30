@@ -1,6 +1,6 @@
 // Change these values to your own username, password, question, and answer.
 const LOGIN_CREDENTIALS = {
-	username: 'Magenta Trully Maharisaputri',
+	username: 'Magenta Trulli Maharisaputri',
 	password: '05072006'
 };
 const QUESTION = {
